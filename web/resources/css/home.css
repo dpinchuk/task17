@@ -1,0 +1,83 @@
+body {
+    background-image: url("../images/gplaypattern.png");
+    background-attachment: fixed;
+}
+
+.menu-main {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем отступы*/
+    padding-left: 0; /*убираем отступы*/
+    margin-top: 0px; /*делаем отступ сверху*/
+}
+.menu-main a {
+    text-decoration: none; /*убираем подчеркивание текста ссылок*/
+    background: #009782; /*добавляем фон к пункту меню*/
+    color: #fff; /*меняем цвет ссылок*/
+    padding: 10px; /*добавляем отступ*/
+    font-family: Verdana; /*меняем шрифт*/
+    border-radius: 5px; /*добавляем скругление*/
+    -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+    -o-transition: all 0.3s 0.01s ease;
+    -webkit-transition: all 0.3s 0.01s ease;
+}
+a:hover {
+    background: #026E3D;/*добавляем эффект при наведении*/
+}
+li {
+    float: left; /*Размещаем список горизонтально для реализации меню*/
+    margin-right: 25px; /*Добавляем отступ у пунктов меню*/
+
+}
+
+#layout {
+    width: 100%;
+    max-width: 1024px;
+    height: auto;
+    margin: auto;
+    background-image: url("../images/background.png");
+}
+
+td {
+    padding: 15px;
+    vertical-align: top;
+    word-wrap: break-word;
+}
+
+#td-menu {
+    background: azure;
+}
+
+#prof_images {
+    padding-left: 5px;
+}
+
+p {
+    text-align-all: justify;
+}
+
+#footer {
+    text-align: center;
+}
+
+#registration {
+    /*margin-left: 250px;*/
+}
+
+#login {
+    background: #009782;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    margin-left: 520px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #9EEFE1 0%, #009782 51%, #9EEFE1 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+#login:hover {background-position: right center;}
