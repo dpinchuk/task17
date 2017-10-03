@@ -12,7 +12,7 @@ body {
 .menu-main a {
     text-decoration: none; /*убираем подчеркивание текста ссылок*/
     background: #009782; /*добавляем фон к пункту меню*/
-    color: #fff; /*меняем цвет ссылок*/
+    color: #FFF; /*меняем цвет ссылок*/
     padding: 10px; /*добавляем отступ*/
     font-family: Verdana; /*меняем шрифт*/
     border-radius: 5px; /*добавляем скругление*/
@@ -61,10 +61,6 @@ table p:first-child {
     text-align: center;
 }
 
-#registration {
-    /*margin-left: 250px;*/
-}
-
 #login {
     background: #009782;
     text-decoration: none;
@@ -82,4 +78,6 @@ table p:first-child {
     transition: .5s;
 }
 
-#login:hover {background-position: right center;}
+#login:hover {
+    background-position: right center;
+}

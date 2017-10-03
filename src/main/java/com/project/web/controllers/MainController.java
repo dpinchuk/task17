@@ -1,6 +1,8 @@
 package com.project.web.controllers;
 
 import com.project.web.objects.User;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +16,7 @@ import javax.servlet.http.HttpSession;
 @Controller
 public class MainController {
 
-    //private static final Logger log = Logger.getLogger(MainController.class);
+    private static final Logger logger = LoggerFactory.getLogger(MainController.class);
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String getMainPage() {
@@ -27,14 +29,19 @@ public class MainController {
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public ModelAndView main(HttpSession session) {
-        WebApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(session.getServletContext());
-        return new ModelAndView("login", "user", new User());
+    public String getLogin() {
+        return "/resources/html/login.html";
     }
 
-    @RequestMapping(value = "/check-user", method = RequestMethod.POST)
-    public ModelAndView checkUser(@ModelAttribute("user") User user) {
-        return new ModelAndView("main", "user", user);
-    }
+//    @RequestMapping(value = "/login", method = RequestMethod.GET)
+//    public ModelAndView main(HttpSession session) {
+//        WebApplicationContext context = WebApplicationContextUtils.getWebApplicationContext(session.getServletContext());
+//        return new ModelAndView("login","user", new User());
+//    }
+//
+//    @RequestMapping(value = "/check-user", method = RequestMethod.POST)
+//    public ModelAndView checkUser(@ModelAttribute("user") User user) {
+//        return new ModelAndView("main", "user", user);
+//    }
 
 }
